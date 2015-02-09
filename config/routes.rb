@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  root 'events#index'
+
+  resources :events, only: [:index, :new, :create]
+
 end

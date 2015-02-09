@@ -1,0 +1,23 @@
+<%= link_to "New Event", new_event_path %>
+<p>
+
+</p>
+
+<% @events.each do |f| %>
+<%= f.date %>
+<p>
+
+</p>
+<%= f.location %>
+<p>
+
+</p>
+<%= f.description %>
+<p>
+
+</p>
+<%= f.req_id %>
+<p>
+
+</p>
+<% end %>
