@@ -1,0 +1,30 @@
+<%= form_for @event do |t| %>
+
+<%= t.label :date %>
+<%= t.date_field :date %>
+<p>
+
+</p>
+<%= t.label :location %>
+<%= t.text_field :location %>
+<p>
+
+</p>
+<%= t.label :description %>
+<%= t.text_area :description %>
+<p>
+
+</p>
+<%= t.label :capacity %>
+<%= t.number_field :capacity %>
+<p>
+
+</p>
+<%= t.label :req_id, "Require ID" %>
+<%= t.check_box :req_id   %>
+<p>
+
+</p>
+
+<%= t.submit "Update" %>
+<% end %>

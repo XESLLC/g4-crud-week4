@@ -1,0 +1,24 @@
+
+
+<% @event.each do |f| %>
+
+<p>
+</p>
+<%= f.date %>
+<p>
+</p>
+<%= f.location %>
+<p>
+</p>
+<%= f.description %>
+<p>
+</p>
+<%= f.capacity %>
+<p>
+</p>
+<%= f.req_id %>
+<p>
+</p>
+
+<%= link_to "Edit ", edit_event_path %>
+<% end %>
